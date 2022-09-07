@@ -32,25 +32,69 @@
   background-color: plum;
   color: black;
 }
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
 </style>
 
-<div class="topnav">
-  <a class="active" href="mainpage.html" target="_blank"><b>Home Page</b></a>
-  <a href="about.html"target="_blank">ABOUT US</a>
-  <a href="communication.html"target="_blank">COMMUNICATION</a>
-</div>
-<br>
-<nav class="navbar navbar-light bg-light">
+<nav class="topnav">
   <div class="container-fluid">
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+    <a class="active" href="mainpage.html" target="_blank"><b>Home Page</b></a>
+    <a href="about.html"target="_blank">ABOUT US</a>
+    <a href="communication.html"target="_blank">COMMUNICATION</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
+      </form>
+    </div> 
   </div>
 </nav>
-</br>
+
+
+
 <div class="">
 <h1 id="mainpagey.html"><b>Stand for Empowerment! Stand for Women's Rights!</b></h1>
-<img src="woman1.jpg" alt="Women's Rights" style="width:300px;height:150px;">
+<img src="woman1.jpg" alt="Women's Rights" style="width:1400px;height:350px;">
 </body>
 </html>
