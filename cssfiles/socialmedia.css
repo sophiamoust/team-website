@@ -1,5 +1,48 @@
 body {
-  background-color: lavender;
+  font-family: "Times New Roman", Times, serif, Arial, sans-serif;
+  font-size: 16px;
+  background: linear-gradient(141deg, lavender 0%, #c6b0c6 51%, lavender 75%);
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 5px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 grey;
+  padding: 16px;
+  text-align: center;
+  background-color: grey;
+  color: lavender;
+}
+
+.fa {
+  font-size: 50px;
 }
 
 .topnav {
@@ -72,19 +115,16 @@ body {
 }
 
 .fa-instagram {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   background: linear-gradient(
     to right,
-    #ef5350,
-    #f48fb1,
-    #7e57c2,
-    #2196f3,
-    #26c6da,
-    #43a047,
-    #eeff41,
-    #f9a825,
-    #ff5722
+    #e6b970,
+    #da0707,
+    #a21a5c,
+    #9c2596,
+    #6d1b9a,
+    #7323d5
   );
 }
 
@@ -110,4 +150,79 @@ body {
 
 #insta {
   text-align: center;
+}
+
+.slideshow-container {
+  position: relative;
+  background: grey;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: lavender;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #dbcde0;
+  color: lavender;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #dedede;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: lavender;
+}
+
+q {
+  font-style: italic;
+}
+
+.author {
+  color: darkslateblue;
+}
+
+.center {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
