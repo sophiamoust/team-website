@@ -111,3 +111,23 @@ body {
 #insta {
   text-align: center;
 }
+#commh1 {
+  text-align: center;
+}
+#ln,
+#fn,
+#em,
+#mes,
+#commh1,
+#commh2,
+#commh3,
+ul,
+#sub {
+  font-family: century;
+}
+ul {
+  font-size: larger;
+}
+#contactright {
+  font-size: px;
+}
