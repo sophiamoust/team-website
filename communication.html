@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <title>Stand for Empowerment</title>
 
-    <title>Team website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-
   <body>
-    <style> 
-  
-
+    <style>
       .topnav {
         overflow: hidden;
         background-color: lavender;
       }
-      
+
       .topnav a {
         float: left;
         color: black;
@@ -23,43 +20,86 @@
         text-decoration: none;
         font-size: 17px;
       }
-      
+
       .topnav a:hover {
         background-color: purple;
         color: navy;
       }
-      
+
       .topnav a.active {
         background-color: plum;
         color: black;
       }
-      </style>
-      
-      <div class="topnav">
-        <a class="active" href="mainpage.html" target="_blank"><b>Home Page</b></a>
-        <a href="about.html"target="_blank">ABOUT US</a>
-        <a href="communication.html"target="_blank">COMMUNICATION</a>
-      </div>
-      <br>
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+
+      .topnav .search-container {
+        float: right;
+      }
+
+      .topnav input[type="text"] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+      }
+
+      .topnav .search-container button {
+        float: right;
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .topnav .search-container button:hover {
+        background: #ccc;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav .search-container {
+          float: none;
+        }
+        .topnav a,
+        .topnav input[type="text"],
+        .topnav .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type="text"] {
+          border: 1px solid #ccc;
+        }
+      }
+    </style>
+
+    <nav class="topnav">
+      <div class="container-fluid">
+        <a class="active" href="mainpage.html" target="_blank"
+          ><b>Home Page</b></a
+        >
+        <a href="about.html" target="_blank">ABOUT US</a>
+        <a href="communication.html" target="_blank">COMMUNICATION</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit">Submit</button>
           </form>
         </div>
-      </nav>
-      </br>
-      <div class="">
-        <h1 class="Display 1">Contact us</h1>
-        
+      </div>
+    </nav>
+
+    <h1>Contact us</h1>
 
     <img src="Stand for Empowerment.jpg" width="1500px" />
 
     <style>
-
-      form{
-        height:200px;
+      form {
+        height: 200px;
       }
     </style>
 
@@ -75,11 +115,10 @@
       ><br />
       <input type="text" id="email" name="email" /><br />
       <label for="message"><b>How may we help you?</b></label
-        ><br />
-      <input type="text" id="message" name="How may we help you?"/><br />
-      
+      ><br />
+      <input type="text" id="message" name="How may we help you?" /><br />
+
       <input type="submit" value="Submit" />
     </form>
-    
   </body>
 </html>
