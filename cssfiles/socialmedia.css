@@ -76,33 +76,10 @@ body {
   color: white;
 }
 
-#commh1 {
+.paragraph {
   text-align: center;
-  font-family: century;
+  font-family: sans-serif;
 }
-#commh2 {
-  font-family: century;
-}
-#commh3 {
-  font-family: century;
-}
-#contactright {
-  font-size: large;
-}
-#fn,
-#ln,
-#em,
-#mes,
-ul {
-  font-family: century;
-}
-ul {
-  font-size: larger;
-
-
-.paragraph{text-align: center;
-  font-family: sans-serif;} 
-
 .headings {
   text-align: center;
   font-family: sans-serif;
@@ -117,5 +94,4 @@ ul {
 }
 #iga {
   font-size: x-large;
-
 }
