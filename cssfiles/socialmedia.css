@@ -75,3 +75,23 @@ body {
   background: #125688;
   color: white;
 }
+
+.paragraph {
+  text-align: center;
+  font-family: sans-serif;
+}
+.headings {
+  text-align: center;
+  font-family: sans-serif;
+}
+.quote {
+  font-size: x-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+.instagram {
+  text-align: center;
+}
+#iga {
+  font-size: x-large;
+}
