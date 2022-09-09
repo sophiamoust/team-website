@@ -166,7 +166,7 @@ body {
 
 .slideshow-container {
   position: relative;
-  background: grey;
+  background: rgb(237, 216, 237);
 }
 
 .mySlides {
@@ -198,14 +198,14 @@ body {
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  background-color: rgba(247, 223, 245, 0.8);
+  color: rgb(0, 0, 0);
 }
 
 .dot-container {
   text-align: center;
   padding: 20px;
-  background: #bfbebe;
+  background: #f89ef8;
 }
 
 .dot {
@@ -221,7 +221,7 @@ body {
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #ce8ce8;
 }
 
 q {
@@ -229,7 +229,7 @@ q {
 }
 
 .author {
-  color: #4c285a;
+  color: #eec4ee;
 }
 
 .center {
@@ -255,4 +255,15 @@ q {
 
 .image-full-width {
   width: 100%;
+}
+
+ul {
+  font-size: larger;
+}
+
+#question {
+  text-align: right;
+}
+#commh1 {
+  text-align: center;
 }
