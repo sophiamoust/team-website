@@ -166,7 +166,7 @@ body {
 
 .slideshow-container {
   position: relative;
-  background: rgb(237, 216, 237);
+  background: grey;
 }
 
 .mySlides {
@@ -198,14 +198,14 @@ body {
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(247, 223, 245, 0.8);
+  background-color: grey;
   color: rgb(0, 0, 0);
 }
 
 .dot-container {
   text-align: center;
   padding: 20px;
-  background: #f89ef8;
+  background: #ccc;
 }
 
 .dot {
@@ -221,7 +221,7 @@ body {
 
 .active,
 .dot:hover {
-  background-color: #ce8ce8;
+  background-color: grey;
 }
 
 q {
@@ -229,7 +229,7 @@ q {
 }
 
 .author {
-  color: #eec4ee;
+  color: #6d1b9a;
 }
 
 .center {
